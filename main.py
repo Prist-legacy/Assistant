@@ -679,7 +679,7 @@ def send_welcome(message):
 @bot.message_handler(func=lambda message: True)
 def send_welcome(message):
     user_id = message.forward_from.id
-    id = "Name: "
+    my_id = "Name: "
     bot.send_message(message.chat.id, "ID: " + str(user_id))
         
 @bot.message_handler(commands=['tip'])
