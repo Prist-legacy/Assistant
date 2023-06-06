@@ -675,6 +675,12 @@ def send_welcome(message):
     except (Exception, psycopg2.DatabaseError) as e:
             bot.send_message(message.chat.id, text=m.no_free_msg.format(current_date),parse_mode = "Markdown")
             print(e)
+            
+@bot.message_handler(func=lambda message: True)
+def send_welcome(message):
+    user_id = message.forward_from.id
+    id = "Name: "
+    bot.send_message(message.chat.id, "ID: " + str(user_id))
         
 @bot.message_handler(commands=['tip'])
 def send_welcome(message):
