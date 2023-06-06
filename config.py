@@ -1,5 +1,5 @@
 
-bot_token = "5565457816:AAG5YpM1LeiwO1-bBh478DsiNnMk4O_VMTk"
+bot_token = "5822980722:AAH9dPhIKYQxXgLEYBvuQTIT5Dfz_GK1JYo"
 
 
 class m:
