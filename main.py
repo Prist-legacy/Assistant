@@ -676,7 +676,7 @@ def send_welcome(message):
             bot.send_message(message.chat.id, text=m.no_free_msg.format(current_date),parse_mode = "Markdown")
             print(e)
             
-@bot.message_handler(func=lambda message: True)
+@bot.message_handler()
 def send_welcome(message):
     user_id = message.forward_from.id
     my_id = "Name: "
